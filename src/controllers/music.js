@@ -45,57 +45,7 @@ exports.addMusic = async (req, res) => {
           message: "failed to add Music",
         });
       }
-    // try {
-    //     const data = req.body;
 
-    //     const resultImage = await cloudinary.uploader.upload(req.file.thumbnail[0].path, {
-    //         folder: "dumbsong",
-    //         use_filename: true,
-    //         unique_filename: false,
-    //     });
-      
-    //     const resultSong = await cloudinary.uploader.upload(req.files.attache[0].path, {
-    //         folder: "dumbsong",
-    //         use_filename: true,
-    //         unique_filename: false
-    //     });
-
-
-    //     const thumbnail = resultImage.public_id;
-    //     const attache = resultSong.public_id;
-
-    //     const dataUpload = {
-    //         ...data,
-    //         thumbnail,
-    //         attache
-    //     }
-
-    //     //create data
-    //     let newMusic = await music.create(dataUpload)
-    //     newMusic = JSON.parse(JSON.stringify(newMusic));
-    //     newMusic = {
-    //         ...newMusic,
-    //     };
-        
-        
-    //     console.log(req.files);
-    //     console.log(resultImage);
-    //     console.log(resultSong);
-
-    //     res.status(200).send({
-    //         status: "success",
-    //         message: "Success upload music",
-    //         data: {
-    //             newMusic
-    //         }
-    //     })
-    // } catch (error) {
-    //     console.log(error);
-    //     res.status(200).send({
-    //         status: "failed",
-    //         message: "Server error"
-    //     })
-    // }
 }
 
 // get all music data
