@@ -13,13 +13,13 @@ exports.addMusic = async (req, res) => {
         const data = req.body;
 
         const resultImage = await cloudinary.uploader.upload(req.files.thumbnail[0].path, {
-            folder: "dumbsound-caca",
+            folder: "dumbsong",
             use_filename: true,
             unique_filename: false,
         });
       
           const resultSong = await cloudinary.uploader.upload(req.files.attache[0].path, {
-            folder: "dumbsound-caca",
+            folder: "dumbsong",
             use_filename: true,
             unique_filename: false,
             resource_type: "video",
