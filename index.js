@@ -29,7 +29,7 @@ app.use(express.json())
 app.use(cors())
 //Create endpoint grouping and router here
 app.use("/api/v1/", router)
-app.use('/uploads', express.static('uploads'))
+// app.use('/uploads', express.static('uploads'))
 
 server.listen(port, () => console.log(`Listening on port ${port}!`))
 

@@ -3,7 +3,7 @@ const multer = require("multer");
 exports.uploadFile = function () {
   const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-      cb(null, "uploads");
+      cb(null, process.env.PATH_FILE);
     },
     filename: function (req, file, cb) {
       cb(null, Date.now() + "-" + file.originalname.replace(/\s/g, ""));
